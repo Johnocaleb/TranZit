@@ -1,0 +1,329 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background-color: ghostwhite;
+    background-size: cover;
+    
+}
+
+.Hero {
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(to top, rgba(255,255,255,0.5)50%,rgba(255,255,255,0.5)50%),url(image/citygrill.png);
+    background-position: 60% center;
+    background-size: cover;
+    border-bottom: 4px solid #0070ab;
+    border-bottom-right-radius: 15%;
+    border-bottom: 10px;
+    border-bottom-color: #0070ba;
+    border-bottom-style: ridge;
+    border-bottom-left-radius: 15%;
+    opacity: 1;
+}
+
+
+.temp p{
+    font-size: 25px;
+}
+
+#tet {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+
+
+.sign {
+    text-decoration: none;
+    width: 17em;
+    height: 7vh;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 25px 0px 0px 25px;
+    color: white;
+    
+    padding: 20px;
+    font-size: 23px;
+    border-right: none;
+}
+
+
+
+
+.search1 {
+   
+    width: 4em;
+    height: 7vh;
+    background: #fff;
+    border: 1px solid white;
+    border-radius: 0px 25px 25px 0px;
+    color: darkslategrey;
+    font-size: 23px;
+    padding: 0px;
+    border-left: none;
+}
+
+    
+    
+    .sign::placeholder {
+        color: white;
+   
+    }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-item-left {
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-right {
+    padding: 10px;
+    flex: 50%;
+}
+
+.secound {
+    
+    height: 40vh;
+    border: 2px solid wheat;
+}
+
+.overlay {
+    
+    height: 100%;
+    width: 60%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    transition: 2.0s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.flex-item-left {
+    padding: 10px;
+    flex: 50%;
+}
+
+.flex-item-right {
+    padding: 10px;
+    flex: 50%;
+}
+
+
+.contact-icon {
+    text-align: center;
+    
+    word-spacing: 22px;
+    
+}
+
+    .contact-icon i {
+        font-size: 29px;
+        color: antiquewhite;
+    }
+
+        .contact-icon i:hover {
+            color: peru;
+        }
+
+
+        .contac a:hover {
+            color: peru;
+        }
+
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+    box-shadow: inset 0 0 120px ghostwhite;
+    border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #0070ba;
+    border-radius: 28px;
+}
+
+    /* Handle on hover */
+   /* ::-webkit-scrollbar-thumb:hover {
+        background: darkblue;
+    }*/
+
+.footer {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    text-align: center;
+    background: blue;
+}
+
+
+.contact-ico:hover{
+    color: saddlebrown;
+}
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+}
+
+    #preloader:before {
+        content: "";
+        position: fixed;
+        top: calc(50% - 30px);
+        left: calc(50% - 30px);
+        border: 6px solid #0070ba;
+        border-top-color: #fff;
+        border-bottom-color: #fff;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        -webkit-animation: animate-preloader 2s linear infinite;
+        animation: animate-preloader 2s linear infinite;
+        background: #fff;
+       
+    }
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    [data-aos-delay] {
+        transition-delay: 0 !important;
+    }
+}
+
+
+@media screen and (max-height: 450px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+        .overlay a {
+            font-size: 20px
+        }
+
+        .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+        }
+}
+
+@media screen and (max-width: 600px) {
+    .overlay {
+        overflow-y: auto;
+    }
+
+        .overlay a {
+            font-size: 20px
+        }
+
+        .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+        }
+   
+        .temp p {
+            padding: 3px;
+            font-size: 18px;
+        }
+
+        #tet {
+            font-size: 19px;
+           align-content: center;
+        }
+    
+}
+
